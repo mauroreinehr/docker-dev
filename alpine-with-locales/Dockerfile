@@ -11,3 +11,8 @@ RUN apk --no-cache add libintl && \
     cd .. && \
     rm -r musl-locales && \
     apk del .locale_build make make musl-dev gcc gettext-dev git
+
+
+
+#BUILD
+#docker build  --rm -f "alpine-with-locales\Dockerfile" -t alpine-localized:3.16 "alpine-with-locales"
